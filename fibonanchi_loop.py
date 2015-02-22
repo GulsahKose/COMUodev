@@ -1,4 +1,6 @@
-n = int(raw_input("Kacinci fibonanchi sayisini girmek istediginizi giriniz: "))
+import time
+
+start = time.time()
 
 def fibonanchi(n):
     if n == 1 or n == 2:
@@ -13,4 +15,9 @@ def fibonanchi(n):
             fib2 = fibonacci;
             i=i+1
         return fibonacci; 
-print fibonanchi(n)
+
+print fibonanchi(5)
+
+end = time.time()
+
+print "%2f" %(end-start)
